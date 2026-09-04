@@ -23,14 +23,16 @@ export default function MapContainer() {
         map,
         {
           scale: 0.7,
+          y:0
         },
         {
-          scale: 1,
+          scale: 0.9,
+          y: -50,
           ease: 'none',
 
           scrollTrigger: {
             trigger: section,
-            start: 'top bottom',
+            start: 'top center',
             end: 'center center',
             scrub: 1,
           },
