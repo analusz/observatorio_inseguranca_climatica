@@ -1,0 +1,26 @@
+#s1,
+#s2 {
+    position: relative;
+    height: 100vh;
+    overflow: visible;
+}
+
+#s1 {
+    background: #fff;
+}
+
+#s2 {
+    background: #1d1e22;
+}
+
+svg {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+
+    width: 100%;
+    height: 150px;
+
+    overflow: visible;
+    display: block;
+}

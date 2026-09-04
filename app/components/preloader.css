@@ -1,0 +1,63 @@
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+    z-index: 99999;
+    inset: 0;
+}
+
+.count-wrapper {
+    position: relative;
+    width: 180px;
+    height: 360px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    will-change: transform;
+}
+
+.count {
+  position: relative;
+  width: 1080px;
+  height: 360px;
+  display: flex;
+  transform: translateX(-1080px);
+  will-change: transform;
+}
+
+.digit {
+    position: relative;
+    width: 180px;
+    height: 360px;
+}
+
+.digit h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: max-content;
+  font-size: 360px;
+  font-weight: lighter;
+  line-height: 1;
+}
+
+.revealer svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transform-box: fill-box;
+}
+
+.container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+

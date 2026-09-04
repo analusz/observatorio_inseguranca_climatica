@@ -1,0 +1,96 @@
+.hero {
+    text-align: center;
+    position: relative;
+    z-index: 5;
+
+}
+
+.headline {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.headline .line {
+    font-size: 14vw;
+    line-height: .9;
+    letter-spacing: -0.792px;
+    color: #000;
+    font-family: Mangogrotesque, Arial, sans-serif;
+}
+
+.headline .line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    gap: 28px;
+    overflow: visible;
+    padding: 4px 0;
+}
+
+.headline .line-p {
+    font-size: 1rem;
+    font-weight: 300;
+    margin: 0;
+    padding-top: 2rem;
+    font-family: var(--font-sans);
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    opacity: 0.8;
+}
+
+
+.headline .word {
+    display: inline-block;
+    overflow: hidden;
+    padding-bottom: 0.1em;
+    margin-bottom: -0.1em;
+}
+
+.headline .word>span {
+    display: inline-block;
+    transform: translateY(105%);
+}
+
+
+.inline-img {
+    display: inline-block;
+    width: clamp(110px, 13vw, 195px);
+    height: clamp(70px, 8vw, 105px);
+    border-radius: 999px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 18px 30px -10px rgba(80, 60, 20, 0.35),
+        0 6px 12px -3px rgba(80, 60, 20, 0.18),
+        inset 0 2px 0 rgba(255, 255, 255, 0.25),
+        inset 0 -3px 6px rgba(80, 40, 0, 0.18);
+    background-image: url('/bandeira.jpg');
+    background-size: cover;
+    /* Cobre todo o espaço do container */
+    background-position: center;
+    /* Centraliza a imagem */
+    background-repeat: no-repeat;
+    /* Impede a imagem de se repetir */
+    transform: scale(0);
+    will-change: transform;
+}
+
+.inline-img::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    pointer-events: none;
+}
+
+.inline-img::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    border-radius: inherit;
+}
