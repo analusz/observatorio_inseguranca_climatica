@@ -1,7 +1,6 @@
 "use client";
 
 import NavBar from "./components/NavBar";
-import MapContainer from "./components/Map";
 import Home from "./components/Home";
 import gsap from "gsap";
 import { ScrollSmoother } from "gsap/ScrollSmoother";
@@ -9,7 +8,8 @@ import { useEffect } from "react";
 import About from "./components/About";
 import Methodology from "./components/Methodology";
 import ClientWrapper from "./components/ClientWrapper";
-
+import MapContainer from "./components/Map";
+import Stats from "./components/Data";
 
 gsap.registerPlugin(ScrollSmoother);
 
@@ -34,14 +34,14 @@ export default function App() {
           <div id="smooth-content">
             <Home />
             <MapContainer />
-            <About />
+            <Stats />
+
             <Methodology />
             <About />
+
           </div>
         </div>
       </main>
-    </ClientWrapper>
-
-
+   </ClientWrapper>
   );
 }

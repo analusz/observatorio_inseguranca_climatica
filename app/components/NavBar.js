@@ -25,10 +25,9 @@ export default function NavBar() {
 
         </div>
 
-        {/* Centro: Links de Navegação */}
+      
 
-
-        {/* Direita: Botão Redondo (#1c67c5) */}
+     
         <div className="btn-container">
           <button
             type="button"

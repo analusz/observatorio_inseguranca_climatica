@@ -13,8 +13,6 @@ export default function Home() {
     useEffect(() => {
         const ctx = gsap.context(() => {
 
-            // Estados iniciais: precisam rodar já, antes do preloader sumir,
-            // pra não aparecer o conteúdo "cru" por trás dele.
             gsap.set(".headline .word > span", { y: "15vw" });
             gsap.set("#inlineImg", { scale: 0 });
 
@@ -63,8 +61,7 @@ export default function Home() {
                 });
             }
 
-            // Se o preloader já sumiu antes do Home montar (raro, mas seguro ter),
-            // roda direto. Senão, espera o evento.
+            
             window.addEventListener("preloader:complete", runIntro, { once: true });
 
         }, homeRef);

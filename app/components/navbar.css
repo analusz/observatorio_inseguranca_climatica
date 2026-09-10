@@ -1,4 +1,3 @@
-/* Header Fixa no Topo */
 header {
   width: 100%;
   position: fixed;
@@ -8,7 +7,7 @@ header {
   mix-blend-mode: difference;
 }
 
-/* Container Principal */
+
 .navbar {
   max-width: 1280px;
   margin: 0 auto;
@@ -41,7 +40,7 @@ header {
   opacity: 0.5;
 }
 
-/* --- CENTRO: LINKS DE NAVEGAÇÃO --- */
+
 .nav-center {
   display: flex;
   align-items: center;
@@ -62,7 +61,7 @@ header {
   color: #4b5563;
 }
 
-/* --- LADO DIREITO: BOTÃO --- */
+
 .btn-container {
   flex: 1;
   display: flex;
@@ -85,19 +84,16 @@ header {
   outline: none;
 }
 
-/* Hover: Aumenta o brilho e levanta ligeiramente */
 .btn-feedback:hover {
   filter: brightness(1.1);
   transform: translateY(-1px);
   box-shadow: 0 6px 8px -1px rgba(0, 0, 0, 0.15);
 }
 
-/* Clique (Active): Efeito de pressionado */
 .btn-feedback:active {
   transform: scale(0.96) translateY(0);
 }
 
-/* Acessibilidade: Borda ao navegar por teclado */
 .btn-feedback:focus-visible {
   outline: 2px solid #1c67c5;
   outline-offset: 2px;
@@ -108,10 +104,8 @@ header {
   outline-offset: 2px;
 }
 
-/* --- RESPONSIVIDADE (MOBILE) --- */
 @media (max-width: 768px) {
   .nav-center {
     display: none;
-    /* Esconde os links centrais em telas menores */
   }
 }

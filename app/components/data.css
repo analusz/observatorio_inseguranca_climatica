@@ -1,0 +1,184 @@
+.data {
+    display: flex;
+    flex-direction: column;
+    gap: 7vw;
+    height: auto;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.indicators {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    width: 100%;
+}
+
+.stat {
+    justify-content: center;
+    align-items: center;
+    margin: 0 50px;
+    line-height: 1;
+}
+
+.stat p {
+    font-size: 1.2vw;
+}
+
+.stat span {
+    font-family: Mangogrotesque, Arial, sans-serif;
+    font-size: 3.4vw;
+    font-weight: 900;
+}
+
+.title-reveal {
+    position: relative;
+    width: fit-content;
+    overflow: hidden;
+}
+
+.title-reveal span {
+    display: block;
+    font-family: Mangogrotesque, Arial, sans-serif;
+    font-size: 6vw;
+}
+
+.curtain-left,
+.curtain-right {
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    background: white;
+    z-index: 2;
+}
+
+.curtain-left {
+    left: 0;
+}
+
+.curtain-right {
+    right: 0;
+}
+
+.surcafe_temperature {
+    display: flex;
+    align-items: center;
+    gap: 5vw;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.image-container,
+.text-container {
+    width: 50%;
+}
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container img {
+    object-fit: contain;
+}
+
+.image-container p {
+    font-size: small;
+}
+
+
+.text-container span {
+    font-family: Mangogrotesque, Arial, sans-serif;
+    font-size: 6vw;
+    text-decoration: uppercase;
+}
+
+.text-container p {
+    font-family: var(--font-sans);
+
+}
+
+.p1-text {
+    font-size: 1.4vw;
+}
+
+.p2-text {
+    font-size: 1.1vw;
+    margin-top: 2vw;
+}
+
+.github-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1em;
+    width: fit-content;
+    margin-top: 5em;
+}
+
+.github-container a {
+    display: inline-flex;
+    align-items: center;
+    gap: 1em;
+    width: fit-content;
+    cursor: pointer;
+}
+
+.github-container p {
+    font-family: var(--font-sans);
+    font-size: 1vw;
+}
+
+.Btn {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: transparent;
+    position: relative;
+
+    border-radius: 7px;
+
+    transition: all .3s;
+}
+
+.svgContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    backdrop-filter: blur(0px);
+    letter-spacing: 0.8px;
+    border-radius: 10px;
+    transition: all .3s;
+    border: 1px solid rgba(156, 156, 156, 0.466);
+}
+
+.BG {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #181818;
+    z-index: -1;
+    border-radius: 10px;
+    pointer-events: none;
+    transition: all .3s;
+}
+
+.github-container:hover .BG {
+    transform: rotate(35deg);
+    transform-origin: bottom;
+}
+
+.github-container:hover .svgContainer {
+    background-color: rgba(156, 156, 156, 0.466);
+    backdrop-filter: blur(4px);
+}

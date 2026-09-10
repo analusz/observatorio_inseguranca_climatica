@@ -56,11 +56,11 @@ export default function Preloader({ onComplete }) {
               }, 500);
             }
           },
-        }, delays[i]); // posiciona na timeline em vez de usar "delay"
+        }, delays[i]);
       });
     });
 
-    return () => ctx.revert(); // mata TODAS as tweens/timelines criadas aqui dentro
+    return () => ctx.revert(); 
   }, [onComplete]);
 
   return (

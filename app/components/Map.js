@@ -23,16 +23,15 @@ export default function MapContainer() {
         map,
         {
           scale: 0.7,
-          y:0
+    
         },
         {
           scale: 0.9,
-          y: -50,
+        
           ease: 'none',
-
           scrollTrigger: {
             trigger: section,
-            start: 'top center',
+            start: 'top 90%',
             end: 'center center',
             scrub: 1,
           },
@@ -56,7 +55,7 @@ export default function MapContainer() {
       >
         <iframe
           title="Observatório de Insegurança Climática de São João de Meriti"
-          src="https://umap.hotosm.org/pt-br/map/observatorio-de-inseguranca-climatica-sao-joao-de-_3775?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true&editMode=disabled&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=none&captionBar=false&captionMenus=true"
+           src="https://umap.hotosm.org/pt-br/map/observatorio-de-inseguranca-climatica-sao-joao-de-_5697?scaleControl=false&miniMap=false&scrollWheelZoom=true&zoomControl=true&editMode=disabled&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=none&captionBar=false&captionMenus=true"
           allowFullScreen
           allow="geolocation"
           className="map-iframe"
